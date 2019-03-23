@@ -1,5 +1,23 @@
 apply plugin: 'com.android.library'
 
+ext {
+    bintrayRepo = 'abidin_artsygradientlayout'
+    bintrayName = 'abidinadiprasetyo'
+    publishedGroupId = 'com.example.abidin_artsygradientlayout'
+    libraryName = 'abidin_artsygradientlayout'
+    artifact = 'abidin_artsygradientlayout'
+    libraryDescription = 'Flexible Gradient ImageView'
+    siteUrl = 'https://github.com/ABIDINADIPRASETYO/abidin_artsygradientlayout'
+    gitUrl = 'https://github.com/ABIDINADIPRASETYO/abidin_artsygradientlayout.git'
+    libraryVersion = '0.0.1'
+    developerId = 'abidinadiprasetyo'
+    developerName = 'Abidin Adi Prasetyo'
+    developerEmail = 'abidinadip@gmail.com'
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
 android {
     compileSdkVersion 28
 
@@ -33,3 +51,5 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation 'com.github.bumptech.glide:glide:3.7.0'
 }
+apply from: 'https://raw.githubusercontent.com/Hariofspades/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/Hariofspades/JCenter/master/bintrayv1.gradle'
