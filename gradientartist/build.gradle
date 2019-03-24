@@ -1,7 +1,10 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+group = 'com.github.ABIDINADIPRASETYO'
+
 
 ext {
-    bintrayRepo = 'abidin_artsygradientlayout'
+    bintrayRepo = 'projectone'
     bintrayName = 'abidinadiprasetyo'
     publishedGroupId = 'com.example.abidin_artsygradientlayout'
     libraryName = 'abidin_artsygradientlayout'
@@ -51,5 +54,5 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation 'com.github.bumptech.glide:glide:3.7.0'
 }
-apply from: 'https://raw.githubusercontent.com/Hariofspades/JCenter/master/installv1.gradle'
-apply from: 'https://raw.githubusercontent.com/Hariofspades/JCenter/master/bintrayv1.gradle'
+apply from: 'https://raw.githubusercontent.com/abidinadiprasetyo/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/abidinadiprasetyo/JCenter/master/bintrayv1.gradle'
