@@ -1,6 +1,5 @@
 package com.example.gradientartist;
 
-
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
@@ -11,7 +10,8 @@ import android.widget.RelativeLayout;
 
 import com.bumptech.glide.Glide;
 
-public class GradientArtistBasic extends RelativeLayout{
+public class AbidinGradientLayout extends RelativeLayout{
+
 
     /** Core Items*/
     private Context mContext;
@@ -30,20 +30,20 @@ public class GradientArtistBasic extends RelativeLayout{
     Drawable gradient;
 
 
-    public GradientArtistBasic(Context context) {
+    public AbidinGradientLayout(Context context) {
         super(context);
         this.mContext=context;
         initView();
     }
 
-    public GradientArtistBasic(Context context, AttributeSet attrs) {
+    public AbidinGradientLayout(Context context, AttributeSet attrs) {
         super(context, attrs);
         this.mContext=context;
         this.attrs=attrs;
         initView();
     }
 
-    public GradientArtistBasic(Context context, AttributeSet attrs, int defStyleAttr) {
+    public AbidinGradientLayout(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         this.mContext=context;
         this.attrs=attrs;
@@ -122,7 +122,6 @@ public class GradientArtistBasic extends RelativeLayout{
         image.setScaleType(scaleType);
         image.setImageResource(resID);
     }
-
 
 
 }

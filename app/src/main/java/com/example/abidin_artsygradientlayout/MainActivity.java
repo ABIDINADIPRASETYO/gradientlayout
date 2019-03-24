@@ -1,10 +1,8 @@
 package com.example.abidin_artsygradientlayout;
 
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -12,11 +10,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
 
-import com.example.gradientartist.GradientArtistBasic;
+import com.example.gradientartist.AbidinGradientLayout;
 
 public class MainActivity extends AppCompatActivity {
 
-    GradientArtistBasic gradient;
+    AbidinGradientLayout gradient;
 
 
     @Override
@@ -35,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        gradient=(GradientArtistBasic) findViewById(R.id.gradientImage);
+        gradient=(AbidinGradientLayout) findViewById(R.id.gradientImage);
 //        gradient.setUrlImage("https://img1.etsystatic.com/002/0/6449624/il_fullxfull.382134677_so6e.jpg",R.drawable.weather,
 //                R.drawable.weather, ImageView.ScaleType.CENTER_CROP);
         gradient.setDrawableImage(R.drawable.me,R.drawable.weather,R.drawable.weather,
